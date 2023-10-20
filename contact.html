@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alan">
+    <meta name="description" content="Little Tacos Shop Project - Course HTML Dave Gray">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+    <title>LTS Contato</title>
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header>
+      <h1>Little Tacos Shop - Contato</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Início</a>
+          </li>
+          <li>
+            <a href="index.html#about">Sobre LTS</a>
+          </li>
+          <li>
+            <a href="/tacos_page/#menu">Nosso Menu</a>
+          </li>
+          <li>
+            <a href="/tacos_page/hours.html">Horários da LTS</a>
+          </li>
+        </ul>
+      </nav>
+      <figure>
+        <img
+          src="/tacos_page/img/tacos_close_up_400x260.png"
+          alt="Litte Taco Shop Tacos">
+        <figcaption>Litte Taco Shop Tacos</figcaption>
+      </figure>
+    </header>
+    <!--Conteúdo - código principal-->
+    <main>
+      <h2>Formulário de contato</h2>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Envie uma mensagem</legend>
+          <p>
+            <label for="firstname">Nome:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Seu nome"
+              required>
+          </p>
+          <p>
+            <label for="emailpersonal">Email:</label>
+            <input
+              type="email"
+              name="emailpersonal"
+              id="emailpersonal"
+              placeholder="Seu email"
+              required>
+          </p>
+          <p>
+            <label for="message">Sua mensagem:</label>
+            <br>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Escreva sua mensagem aqui"
+              required
+            ></textarea>
+          </p>
+        </fieldset>
+        <button
+          type="submit"
+          formaction="https://httpbin.org/post"
+          formmethod="post"
+        >
+          Enviar
+        </button>
+        <button type="reset">Limpar</button>
+      </form>
+      <h2>Nosso endereço</h2>
+      <address>555 Taco Temptation Lane, Suite T</address>
+      <address>Senhor do Bonfim, BA 55555-5555</address>
+      <br>
+      <address>Zap: <a href="tel:+40028922">40028922</a></address> <!--Sim, o número do bom-dia e companhia-->
+      <br>
+      <a href="#">Voltar ao topo</a>
+      <br>
+      <hr>
+    </main>
+    <!--Rodapé-->
+    <footer>
+      <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+  </body>
+</html>
